@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "profile": "account-default",
+  "account": "terryrogers",
+  "centralRepository": "https://github.com/terryrogers/.github",
+  "licence": "MIT",
+  "supportRoute": "github-discussions",
+  "conductRoute": "confidential-email"
+}

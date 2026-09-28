@@ -1,0 +1,15 @@
+# Private local project lifecycle records
+AGENTS.md
+PROJECT.md
+GOALS.md
+STATUS.md
+DECISIONS.md
+HANDOFFS.md
+
+# Local tooling & generated files
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+/.tools/

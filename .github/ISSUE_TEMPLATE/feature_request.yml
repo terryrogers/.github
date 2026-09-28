@@ -1,0 +1,39 @@
+# repository-standard: schema=1; standard=Repository Standards; version=1.0.0-draft; owner=terryrogers; source=https://github.com/terryrogers/.github/blob/main/.github/ISSUE_TEMPLATE/feature_request.yml; scope=account-default; override=local-file
+name: Feature Request
+description: Suggest an improvement or new capability.
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Or Opportunity
+      description: What user need should be addressed?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Intended Outcome
+      description: What observable result would make this successful?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Describe current workarounds or other approaches.
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Add public-safe examples, mockups, or constraints.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched for an existing request.
+          required: true
+        - label: This request contains no secrets, private systems, or private project-management information.
+          required: true
