@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "templateVersion": "2.0.1",
+  "templateVersion": "3.0.0",
   "modules": [
     "documentation",
     "licensing",
@@ -25,6 +25,11 @@
       "sha256": "8a84383d06832229439f9d5ed54086229e6176953c020c6eaa1ef0488c00d204"
     },
     {
+      "path": ".github/workflows/quality-licensing.yml",
+      "module": "licensing",
+      "sha256": "a4debe304aa932f4f5c5d50618c6a701b3c7499a942cc247b76dc866a95f2118"
+    },
+    {
       "path": ".github/workflows/quality-module-drift.yml",
       "module": "module-drift",
       "sha256": "49e488326c8ce900dd27a3530baa1f7c100c7df5aedf1c6baddd1f59c272f4b7"
@@ -40,9 +45,14 @@
       "sha256": "89959bb386284925477919912cbd1cc7f2cbf17aa1dfaaeeeb8f1978916ac875"
     },
     {
+      "path": ".rqg/licensing/spdx-license-identifiers.json",
+      "module": "licensing",
+      "sha256": "fb156713b8ebdfb42f2911018302438777b59d67cb7b4f21ce825583eabe9f59"
+    },
+    {
       "path": ".rqg/template/modules/catalog.json",
       "module": "module-drift",
-      "sha256": "22eb72dd2a794e4a7352ed1152f02292f5ca15b4fcee1a37b45cd76f59a0b15a"
+      "sha256": "5d144e3fe4e1290ea6923854384c2e4ad22e0cd64671a428a770b37995f967fe"
     },
     {
       "path": ".rqg/template/modules/documentation/payload/.github/workflows/quality-documentation.yml",
@@ -52,7 +62,7 @@
     {
       "path": ".rqg/template/modules/documentation/payload/scripts/Test-RepositoryStandards.ps1",
       "module": "module-drift",
-      "sha256": "a99de896100227530cf060655df5b2f07cf9fe255aec5b1857c93ab2e81da55f"
+      "sha256": "fc143c9c569031f6e5fcabc72cf5661e531c62b5d0f46729b42c2309e769b6c6"
     },
     {
       "path": ".rqg/template/modules/dotnet/payload/.github/workflows/quality-dotnet.yml",
@@ -65,9 +75,24 @@
       "sha256": "9980cb36ce6b34898d40533230d138ea0584a31fd62a63d4fcfde8a8383d91a9"
     },
     {
+      "path": ".rqg/template/modules/licensing/payload/.github/workflows/quality-licensing.yml",
+      "module": "module-drift",
+      "sha256": "a4debe304aa932f4f5c5d50618c6a701b3c7499a942cc247b76dc866a95f2118"
+    },
+    {
+      "path": ".rqg/template/modules/licensing/payload/.rqg/licensing/spdx-license-identifiers.json",
+      "module": "module-drift",
+      "sha256": "fb156713b8ebdfb42f2911018302438777b59d67cb7b4f21ce825583eabe9f59"
+    },
+    {
       "path": ".rqg/template/modules/licensing/payload/LICENSES/Repository-Quality-Gates-MIT.txt",
       "module": "module-drift",
       "sha256": "ee4b1d1a6b57677fa96322cd45d08e82dcc51ed3c92d55993e59c0013a75c21e"
+    },
+    {
+      "path": ".rqg/template/modules/licensing/payload/scripts/Test-RepositoryLicence.ps1",
+      "module": "module-drift",
+      "sha256": "8bc7d856b1b3be4f18e3361f4162d31f700d7f8128b5ddbe3497f593ecade8c9"
     },
     {
       "path": ".rqg/template/modules/module-drift/payload/.github/workflows/quality-module-drift.yml",
@@ -107,7 +132,7 @@
     {
       "path": ".rqg/template/modules/powershell/payload/.github/workflows/quality-powershell.yml",
       "module": "module-drift",
-      "sha256": "a8a455ef4f3ad29cc6a40455f1b188d5e1d188dad20988b7a27ff33c0cca47df"
+      "sha256": "9b55919acd73af868171fa42e8ec74cf704a7ecb8b6d48491e00c55b15113c48"
     },
     {
       "path": ".rqg/template/modules/python/payload/.github/workflows/quality-python.yml",
@@ -122,7 +147,7 @@
     {
       "path": ".rqg/template/scripts/Invoke-RepositoryQualityGates.ps1",
       "module": "module-drift",
-      "sha256": "da9137cbacea14fa3db2c41e7d953bfc693a958748d08f0568957e0b4040191d"
+      "sha256": "c105aa5b5a0dfda6bd9c092ad3d6de450b3292ae4ec48468c47d13d51d1f2f40"
     },
     {
       "path": ".rqg/template/template/.githooks/pre-commit",
@@ -227,7 +252,7 @@
     {
       "path": "scripts/rqg-module-catalog.json",
       "module": "module-drift",
-      "sha256": "22eb72dd2a794e4a7352ed1152f02292f5ca15b4fcee1a37b45cd76f59a0b15a"
+      "sha256": "5d144e3fe4e1290ea6923854384c2e4ad22e0cd64671a428a770b37995f967fe"
     },
     {
       "path": "scripts/Test-DetectionPolicy.ps1",
@@ -245,9 +270,14 @@
       "sha256": "7b88d6eec651f864430e5faede33dea1189db9ab9f9d16a4650a4581317d3b86"
     },
     {
+      "path": "scripts/Test-RepositoryLicence.ps1",
+      "module": "licensing",
+      "sha256": "8bc7d856b1b3be4f18e3361f4162d31f700d7f8128b5ddbe3497f593ecade8c9"
+    },
+    {
       "path": "scripts/Test-RepositoryStandards.ps1",
       "module": "documentation",
-      "sha256": "a99de896100227530cf060655df5b2f07cf9fe255aec5b1857c93ab2e81da55f"
+      "sha256": "fc143c9c569031f6e5fcabc72cf5661e531c62b5d0f46729b42c2309e769b6c6"
     },
     {
       "path": "scripts/Test-Secrets.ps1",
