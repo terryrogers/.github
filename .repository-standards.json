@@ -1,9 +1,16 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "profile": "account-default",
   "account": "terryrogers",
   "centralRepository": "https://github.com/terryrogers/.github",
-  "licence": "MIT",
+  "licence": {
+    "class": "open-source",
+    "identifier": "MIT",
+    "rightsHolder": "Repository Contributors",
+    "decisionStatus": "approved",
+    "templateVersion": null,
+    "overrideReason": null
+  },
   "supportRoute": "github-discussions",
   "conductRoute": "confidential-email"
 }
