@@ -17,6 +17,10 @@ The repository is being aligned with Repository Standards 1.0.0. Account default
 
 Repository-specific README, licence, changelog, gitignore, CODEOWNERS, Dependabot configuration, commands, architecture, & profile-selected documentation remain in each repository.
 
+## Conditional Documents
+
+See [Conditional Repository Documents](CONDITIONAL_DOCUMENTS.md) for the governed files that are added only when their documented trigger applies.
+
 ## Support
 
 Ask usage & support questions in [GitHub Discussions Q&A](https://github.com/terryrogers/.github/discussions/categories/q-a). Report reproducible defects with the bug form. Follow `SECURITY.md` for vulnerabilities & `CODE_OF_CONDUCT.md` for confidential conduct reports.
