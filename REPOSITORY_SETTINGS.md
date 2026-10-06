@@ -30,7 +30,7 @@ Human approval counts, auto-merge, branch-update controls, code scanning, Projec
 
 ## Repository Feature Exceptions
 
-Every repository must keep Issues enabled and carry local `bug_report.yml`, `feature_request.yml`, `question.yml`, & `config.yml` files. Discussions, Wikis, & Pages remain disabled by default. Any deviation must be recorded in that repository's `.repository-standards.json` `featureExceptions` array with the feature, intended state, owner, reason, approved status, & review or retirement condition.
+Every repository must keep Issues enabled and carry local `bug_report.yml`, `feature_request.yml`, `question.yml`, & `config.yml` files. Discussions, Wikis, & Pages remain disabled by default. Enabling one of those three features requires an approved entry in that repository's `.repository-standards.json` `featureExceptions` array with the feature, intended state, owner, reason, approved status, & review or retirement condition.
 
 ## Organization Defaults
 
