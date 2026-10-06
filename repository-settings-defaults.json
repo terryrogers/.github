@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "1.0",
+  "standard": "Repository Standards",
+  "standardVersion": "1.1.0",
+  "inheritance": {
+    "githubAccountDefaultsApplySettings": false,
+    "application": "Apply through GitHub administration and verify through audit or approved automation"
+  },
+  "repository": {
+    "defaultBranch": "main",
+    "webCommitSignoff": "required-where-supported",
+    "merge": {
+      "allowSquash": true,
+      "allowMergeCommit": false,
+      "allowRebase": false,
+      "deleteBranchOnMerge": true,
+      "allowAutoMerge": "repository-profile",
+      "allowUpdateBranch": "repository-profile"
+    },
+    "defaultBranchProtection": {
+      "required": true,
+      "requirePullRequest": true,
+      "requireCurrentStatusChecks": true,
+      "requireConversationResolution": true,
+      "blockForcePush": true,
+      "blockDeletion": true,
+      "bypassActors": [],
+      "requiredApprovingReviewCount": "repository-profile"
+    },
+    "actions": {
+      "enabled": true,
+      "allowedActions": "all-unless-repository-profile-restricts",
+      "defaultWorkflowPermissions": "read",
+      "canApprovePullRequestReviews": false,
+      "thirdPartyActions": "immutable-commit-sha"
+    },
+    "security": {
+      "dependencyGraph": true,
+      "dependabotAlerts": true,
+      "dependabotSecurityUpdates": true,
+      "dependabotVersionUpdates": "local-config-required",
+      "secretScanning": "required-where-supported",
+      "secretScanningPushProtection": "required-where-supported",
+      "privateVulnerabilityReporting": "required-for-public",
+      "codeScanning": "required-when-supported-code-and-approved-configuration-exist"
+    },
+    "features": {
+      "issues": "enabled-unless-approved-alternative-intake-exists",
+      "wiki": "disabled-unless-documented-purpose-and-owner",
+      "projects": "disabled-unless-documented-purpose-and-owner",
+      "discussions": "disabled-unless-approved-support-or-community-route",
+      "pages": "disabled-unless-approved-publication-route",
+      "webhooks": "disabled-unless-documented-purpose-and-owner",
+      "deployKeys": "disabled-unless-documented-purpose-and-owner",
+      "environments": "disabled-unless-documented-purpose-and-owner",
+      "secretsAndVariables": "minimum-required-with-documented-purpose-and-owner"
+    },
+    "privateRunners": {
+      "requiredPair": [
+        "windows",
+        "linux"
+      ],
+      "runnerGroupAccess": "selected-private-repositories-only",
+      "allowPublicRepositories": false,
+      "allowUntrustedForkCode": false,
+      "githubVisibleIdentity": "neutral"
+    }
+  },
+  "organization": {
+    "twoFactorAuthentication": "required-after-access-readiness-review",
+    "memberRepositoryCreation": "owner-review-required",
+    "webCommitSignoff": true,
+    "actionsDefaultWorkflowPermissions": "read",
+    "actionsCanApprovePullRequestReviews": false,
+    "securityDefaultsForNewRepositories": [
+      "dependency-graph",
+      "dependabot-alerts",
+      "dependabot-security-updates"
+    ],
+    "periodicAccessAndPolicyReview": true
+  },
+  "exceptions": [
+    {
+      "id": "RQG-PRIVATE-PLAN-001",
+      "scope": "Private repositories for which the current GitHub plan rejects native protection",
+      "compensatingControls": [
+        "pull-request workflow",
+        "passing tests on approved private runners",
+        "verified merges",
+        "procedural prohibition of force-pushing or deleting main",
+        "retained private audit evidence"
+      ],
+      "retirementCondition": "Native protection becomes available"
+    },
+    {
+      "id": "RS-ADR-021-DCC",
+      "scope": "terryrogers/DCC_LabStation_LS8",
+      "merge": {
+        "allowSquash": true,
+        "allowMergeCommit": true,
+        "allowRebase": false,
+        "deleteBranchOnMerge": true
+      },
+      "reason": "Governed milestone merge commits"
+    }
+  ]
+}

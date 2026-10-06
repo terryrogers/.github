@@ -4,7 +4,7 @@ This public `.github` repository supplies GitHub-supported account defaults for 
 
 ## Status
 
-The repository is being aligned with Repository Standards 1.0.0. Account defaults apply only when a downstream repository does not provide a supported local override.
+The repository is aligned with Repository Standards 1.1.0. Account defaults apply only when a downstream repository does not provide a supported local override.
 
 ## What Is Centralized
 
@@ -20,6 +20,10 @@ Repository-specific README, licence, changelog, gitignore, CODEOWNERS, Dependabo
 ## Conditional Documents
 
 See [Conditional Repository Documents](CONDITIONAL_DOCUMENTS.md) for the governed files that are added only when their documented trigger applies.
+
+## Repository Settings
+
+See [Repository Settings Policy](REPOSITORY_SETTINGS.md) for the approved merge, protection, Actions, security, feature, runner, organization, & exception defaults. GitHub does not inherit these settings from this repository; audits and approved administration apply them.
 
 ## Support
 
