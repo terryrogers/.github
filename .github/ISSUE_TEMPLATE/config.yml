@@ -1,9 +1,2 @@
-# repository-standard: schema=1; standard=Repository Standards; version=1.0.0-draft; owner=terryrogers; source=https://github.com/terryrogers/.github/blob/main/.github/ISSUE_TEMPLATE/config.yml; scope=account-default; override=local-file
+# repository-standard: schema=1; standard=Repository Standards; version=1.2.0; owner=terryrogers; source=https://github.com/terryrogers/.github/blob/main/.github/ISSUE_TEMPLATE/config.yml; scope=account-default; override=local-file
 blank_issues_enabled: false
-contact_links:
-  - name: Questions & Support
-    url: https://github.com/terryrogers/.github/discussions/categories/q-a
-    about: Ask installation, configuration, usage, & troubleshooting questions.
-  - name: Security Reports
-    url: https://github.com/terryrogers/.github/security
-    about: Use the repository security policy & Private Vulnerability Reporting where available.

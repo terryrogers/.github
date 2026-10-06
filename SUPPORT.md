@@ -3,7 +3,7 @@
 
 ## Questions & Usage Help
 
-Use [GitHub Discussions Q&A](https://github.com/terryrogers/.github/discussions/categories/q-a) for installation, configuration, usage, & troubleshooting questions.
+Use the repository's question issue form for installation, configuration, usage, & troubleshooting questions. Search existing issues first & include only public-safe information.
 
 ## Bug Reports
 
