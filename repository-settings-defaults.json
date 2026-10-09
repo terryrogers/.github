@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "standard": "Repository Standards",
-  "standardVersion": "1.1.0",
+  "standardVersion": "1.2.0",
   "inheritance": {
     "githubAccountDefaultsApplySettings": false,
     "application": "Apply through GitHub administration and verify through audit or approved automation"
@@ -45,11 +45,18 @@
       "codeScanning": "required-when-supported-code-and-approved-configuration-exist"
     },
     "features": {
-      "issues": "enabled-unless-approved-alternative-intake-exists",
+      "issues": true,
+      "requiredLocalIssueTemplates": [
+        "bug_report.yml",
+        "feature_request.yml",
+        "question.yml",
+        "config.yml"
+      ],
       "wiki": "disabled-unless-documented-purpose-and-owner",
       "projects": "disabled-unless-documented-purpose-and-owner",
-      "discussions": "disabled-unless-approved-support-or-community-route",
-      "pages": "disabled-unless-approved-publication-route",
+      "discussions": false,
+      "pages": false,
+      "exceptionAuthority": ".repository-standards.json featureExceptions",
       "webhooks": "disabled-unless-documented-purpose-and-owner",
       "deployKeys": "disabled-unless-documented-purpose-and-owner",
       "environments": "disabled-unless-documented-purpose-and-owner",

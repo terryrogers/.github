@@ -1,4 +1,4 @@
-<!-- repository-standard: schema=1; standard=Repository Standards; version=1.1.0; scope=local-required; source=local -->
+<!-- repository-standard: schema=1; standard=Repository Standards; version=1.2.0; scope=local-required; source=local -->
 # Repository Settings Policy
 
 ## Important Boundary
@@ -19,13 +19,18 @@ GitHub does not inherit repository or organization settings from an account-leve
 | Dependency Security | Dependency graph, Dependabot alerts, security updates, & local version-update configuration enabled |
 | Secret Protection | Secret scanning & push protection enabled wherever supported |
 | Vulnerability Reporting | Private Vulnerability Reporting enabled for public repositories |
-| Unused Features | Disabled unless a documented purpose & owner exist |
+| Issues | Enabled with local bug, feature, question, & configuration forms |
+| Discussions, Wikis & Pages | Disabled unless an approved repository-local exception exists |
 | Private Runners | Approved Windows/Linux pair; selected private repositories only; never public or untrusted-fork accessible |
 | Web Commit Signoff | Required where GitHub supports it |
 
 ## Profile-Selected Settings
 
-Human approval counts, auto-merge, branch-update controls, code scanning, Issues, Projects, Discussions, Pages, webhooks, deploy keys, environments, secrets, variables, & allowed-actions restrictions depend on the repository purpose. Each enabled optional surface must have a documented purpose & owner.
+Human approval counts, auto-merge, branch-update controls, code scanning, Projects, webhooks, deploy keys, environments, secrets, variables, & allowed-actions restrictions depend on the repository purpose. Each enabled optional surface must have a documented purpose & owner.
+
+## Repository Feature Exceptions
+
+Every repository must keep Issues enabled and carry local `bug_report.yml`, `feature_request.yml`, `question.yml`, & `config.yml` files. Discussions, Wikis, & Pages remain disabled by default. Enabling one of those three features requires an approved entry in that repository's `.repository-standards.json` `featureExceptions` array with the feature, intended state, owner, reason, approved status, & review or retirement condition.
 
 ## Organization Defaults
 

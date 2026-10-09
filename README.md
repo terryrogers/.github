@@ -4,7 +4,7 @@ This public `.github` repository supplies GitHub-supported account defaults for 
 
 ## Status
 
-The repository is aligned with Repository Standards 1.1.0. Account defaults apply only when a downstream repository does not provide a supported local override.
+The repository is aligned with Repository Standards 1.2.0. Account defaults apply only when a downstream repository does not provide a supported local override.
 
 ## What Is Centralized
 
@@ -13,7 +13,7 @@ The repository is aligned with Repository Standards 1.1.0. Account defaults appl
 - Support guidance
 - Security reporting guidance
 - Pull-request template
-- Bug & feature issue forms
+- Bug, feature, question, & configuration issue forms
 
 Repository-specific README, licence, changelog, gitignore, CODEOWNERS, Dependabot configuration, commands, architecture, & profile-selected documentation remain in each repository.
 
@@ -27,7 +27,7 @@ See [Repository Settings Policy](REPOSITORY_SETTINGS.md) for the approved merge,
 
 ## Support
 
-Ask usage & support questions in [GitHub Discussions Q&A](https://github.com/terryrogers/.github/discussions/categories/q-a). Report reproducible defects with the bug form. Follow `SECURITY.md` for vulnerabilities & `CODE_OF_CONDUCT.md` for confidential conduct reports.
+Use the repository's question form for public-safe usage & support questions, the bug form for reproducible defects, & the feature form for proposals. Follow `SECURITY.md` for vulnerabilities & `CODE_OF_CONDUCT.md` for confidential conduct reports.
 
 ## Licence
 
