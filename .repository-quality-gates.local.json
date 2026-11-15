@@ -1,0 +1,19 @@
+{
+  "modules": {
+    "include": [],
+    "repositoryOwned": []
+  },
+  "secretScanning": {
+    "additionalConfigFiles": []
+  },
+  "paths": {
+    "repositoryOwned": [
+      ".github/ISSUE_TEMPLATE/bug_report.yml",
+      ".github/ISSUE_TEMPLATE/config.yml",
+      ".github/ISSUE_TEMPLATE/feature_request.yml",
+      ".github/ISSUE_TEMPLATE/question.yml"
+    ]
+  },
+  "schemaVersion": 1,
+  "rqgEnabled": true
+}
